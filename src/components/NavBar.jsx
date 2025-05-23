@@ -3,12 +3,12 @@ import NavButton from "./NavButton"
 const NavBar = () => {
   return (
     <>
-      <nav className="flex items-center justify-center">
-        <div className="bg-indigo-500 w-fit border-2 border-black rounded-2xl">
+      <nav className="-z-10 flex items-center justify-center mt-8">
+        <div className="backdrop-blur-xs w-fit border-2 border-black rounded-2xl">
           <NavButton content="Home"/>
-          <NavButton content="Projects"/>
-          <NavButton content="About"/>
-          <NavButton content="Contact"/>
+          <NavButton content="Projects" isHome={false}/>
+          <NavButton content="About" isHome={false}/>
+          <NavButton content="Contact" isHome={false}/>
         </div>
       </nav>
     </>

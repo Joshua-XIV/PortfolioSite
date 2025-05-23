@@ -1,8 +1,10 @@
-
+import HomeHero from "../components/HomeHero"
 
 const HomePage = () => {
   return (
-    <div>HomePage</div>
+    <>
+      <HomeHero name="Joshua Hernandez" location="United States" countryCode="US"/>
+    </>
   )
 }
 
