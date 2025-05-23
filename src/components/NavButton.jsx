@@ -5,7 +5,7 @@ const NavButton = ({content, isHome = true}) => {
 
   return (
     <Link to={path} 
-    className="py-3 px-5 hover:bg-gray-500/95 rounded-2xl text-white cursor-pointer">
+    className="py-3 px-5 hover:bg-white/10 rounded-2xl text-white cursor-pointer">
       {content}
     </Link>
   )

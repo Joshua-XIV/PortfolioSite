@@ -5,7 +5,7 @@ import BackGround from "../components/BackGround";
 const MainLayout = () => {
   return (
     <>
-      <BackGround></BackGround>
+      <BackGround/>
       <NavBar/>
       <Outlet/>
     </>
