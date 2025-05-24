@@ -1,4 +1,7 @@
 import HomeHero from "../components/HomeHero"
+import AboutMe from "../components/AboutMe"
+import TechStack from "../components/TechStack"
+const gradient = "bg-gradient-to-br from-blue-500 to-green-500 bg-clip-text text-transparent"
 
 const HomePage = () => {
   return (
@@ -9,10 +12,10 @@ const HomePage = () => {
       countryCode="US"
       githubURL="https://github.com/Joshua-XIV"
       linkedInURL="https://www.linkedin.com/in/joshua-hernandez-77306b334/"/>
-      <div className="text-9xl">Hello</div>
-      <div className="text-9xl">Hello</div>
-      <div className="text-9xl">Hello</div>
-      <div className="text-9xl">Hello</div>
+      <div className="mx-auto md:w-3xl lg:w-4xl mt-20 mb-20">
+        <AboutMe gradient={gradient}/>
+        <TechStack gradient={gradient}/>
+      </div>
     </>
   )
 }
