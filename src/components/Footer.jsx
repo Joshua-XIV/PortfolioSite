@@ -16,7 +16,7 @@ const Footer = ({gradient, firstName, LastName, githubLink, linkedInLink}) => {
           {/* Socials*/}
           <div className='flex-1 px-2'>
             <div className=' text-white pb-3 font-[open sans]'>Socials</div>
-            <div className='flex flex-col text-indigo-200'>
+            <div className='flex flex-col text-indigo-200 w-fit'>
               <Link to={githubLink} className='hover:underline'>GitHub</Link>
               <Link to={linkedInLink} className='hover:underline'>LinkedIn</Link>
               <Link onClick={ () => window.location = 'mailto:josh.hdz956@yahoo.com'} className='hover:underline'>Email</Link>
@@ -26,7 +26,7 @@ const Footer = ({gradient, firstName, LastName, githubLink, linkedInLink}) => {
           {/* Explore*/}
           <div className='flex-1 px-2'>
             <div className=' text-white pb-3 '>Explore</div>
-            <div className='flex flex-col text-indigo-200'>
+            <div className='flex flex-col text-indigo-200 w-fit'>
               <Link to='/' className='hover:underline'>Home</Link>
               <Link to='/projects' className='hover:underline'>Projects</Link>
               <Link to='/about' className='hover:underline'>About</Link>
