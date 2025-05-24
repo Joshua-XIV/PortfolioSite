@@ -1,6 +1,7 @@
 import HomeHero from "../components/HomeHero"
 import AboutMe from "../components/AboutMe"
 import TechStack from "../components/TechStack"
+import Educations from "../components/Educations"
 const gradient = "bg-gradient-to-br from-blue-500 to-green-500 bg-clip-text text-transparent"
 
 const HomePage = () => {
@@ -15,6 +16,7 @@ const HomePage = () => {
       <div className="mx-auto md:w-3xl lg:w-4xl mt-20 mb-20">
         <AboutMe gradient={gradient}/>
         <TechStack gradient={gradient}/>
+        <Educations gradient={gradient}/>
       </div>
     </>
   )
