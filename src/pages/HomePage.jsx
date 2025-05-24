@@ -2,8 +2,8 @@ import HomeHero from "../components/HomeHero"
 import AboutMe from "../components/AboutMe"
 import TechStack from "../components/TechStack"
 import Educations from "../components/Educations"
-const gradient = "bg-gradient-to-br from-blue-500 to-green-500 bg-clip-text text-transparent"
 
+const gradient = "bg-gradient-to-br from-blue-500 to-green-500 bg-clip-text text-transparent"
 const HomePage = () => {
   return (
     <>

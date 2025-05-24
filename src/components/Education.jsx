@@ -3,7 +3,7 @@ const Education = ({name, degreeType, degreeMajor, startingDate, endingDate = "P
     endingDate = "Present"
 
   return (
-    <div className='px-4 py-2'>
+    <section className='px-4 py-2'>
       <div className='text-white flex space-x-4 items-center'>
         <div className="w-15 h-15 rounded-full border-green-500 border-2 overflow-hidden">
           <img src={imagePath} alt={name} className='scale-150 bg-white'></img>
@@ -14,7 +14,7 @@ const Education = ({name, degreeType, degreeMajor, startingDate, endingDate = "P
           <text className='text-indigo-200 text-2xl sm:text-2xl md:text-[14px]'>{degreeType} in {degreeMajor}</text>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

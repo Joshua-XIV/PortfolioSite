@@ -5,10 +5,10 @@ const NavBar = () => {
     <>
       <nav className="flex items-center justify-center mt-8">
         <div className="fixed flex backdrop-blur-xs w-fit h-fit border-2 border-black rounded-2xl">
-          <NavButton content="Home"/>
-          <NavButton content="Projects" isHome={false}/>
-          <NavButton content="About" isHome={false}/>
-          <NavButton content="Contact" isHome={false}/>
+          <NavButton content="Home" isHome={true}/>
+          <NavButton content="Projects"/>
+          <NavButton content="About"/>
+          <NavButton content="Contact" isContact={true}/>
         </div>
       </nav>
     </>

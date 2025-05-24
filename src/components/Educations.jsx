@@ -3,13 +3,13 @@ import ACCLogo from "../assets/accLogo.png"
 
 const schools = [
   {name: "Austin Community College", degreeType: "AS", degreeMajor: "Computer Science", startingDate: "August 2023", endingDate: "May 2025", imagePath: ACCLogo},
-  {name: "Some University", degreeType: "BS", degreeMajor: "Computer Science", startingDate: "May 2025", endingDate: "", imagePath: ""},
+  {name: "Some University", degreeType: "B.S", degreeMajor: "Computer Science", startingDate: "May 2025", endingDate: "", imagePath: ""},
 ]
 
 
 const Educations = ({gradient}) => {
   return (
-    <>
+    <section>
       <div className={`mt-20 mb-10 text-5xl text-center ${gradient}`}>Education
         <span className={`${gradient} cursor text-5xl`}>|</span>
       </div>
@@ -29,7 +29,7 @@ const Educations = ({gradient}) => {
           ))}
         </div>
       </div>
-    </>
+    </section>
   )
 }
 
