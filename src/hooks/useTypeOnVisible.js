@@ -5,6 +5,7 @@ export default function useTypeOnVisible(fullText, delay = 150) {
   const [typedText, setTypedText] = useState('');
   const [index, setIndex] = useState(0);
   const [hasAnimated, setHasAnimated] = useState(false);
+  const [isDone, setIsDone] = useState(false);
   const ref = useRef(null);
 
   // Watch for visibility
@@ -32,10 +33,14 @@ export default function useTypeOnVisible(fullText, delay = 150) {
     const timeout = setTimeout(() => {
       setTypedText((prev) => prev + fullText[index]);
       setIndex((i) => i + 1);
+
+      if (index + 1 >= fullText.length){
+        setIsDone(true)
+      }
     }, delay);
 
     return () => clearTimeout(timeout);
   }, [index, hasAnimated, fullText, delay]);
 
-  return { typedText, ref };
+  return { typedText, ref, isDone };
 }

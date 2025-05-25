@@ -1,13 +1,13 @@
 import useTypeOnVisible from "../hooks/useTypeOnVisible"
 
 const AboutMe = ({gradient}) => {
-  const {typedText, ref} =useTypeOnVisible("About Me", 100);
+  const {typedText, ref, isDone} =useTypeOnVisible("About Me", 100);
   return (
     <div>
       <div>
         <div ref={ref} className={`text-5xl ${gradient} text-center`}>
           {typedText}
-          <span className={`text-5xl ${gradient} cursor`}>|</span>
+          {!isDone && <span className={`text-5xl ${gradient} cursor`}>|</span>}
         </div>
         <div className='justify-center mt-4 text-[19px] text-indigo-200'>
           I am currently an undergraduate student pursuing my B.S CS degree.
