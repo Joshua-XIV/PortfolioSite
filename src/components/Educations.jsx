@@ -1,5 +1,6 @@
 import Education from "./Education"
 import ACCLogo from "../assets/accLogo.png"
+import useTypeOnVisible from "../hooks/useTypeOnVisible"
 
 const schools = [
   {name: "Austin Community College", degreeType: "AS", degreeMajor: "Computer Science", startingDate: "August 2023", endingDate: "May 2025", imagePath: ACCLogo},
@@ -8,9 +9,10 @@ const schools = [
 
 
 const Educations = ({gradient}) => {
+  const {typedText, ref} = useTypeOnVisible("Education", 100);
   return (
     <section>
-      <div className={`mt-20 mb-10 text-5xl text-center ${gradient}`}>Education
+      <div ref={ref} className={`mt-20 mb-10 text-5xl text-center ${gradient}`}>{typedText}
         <span className={`${gradient} cursor text-5xl`}>|</span>
       </div>
 
