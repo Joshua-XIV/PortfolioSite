@@ -29,7 +29,7 @@ const languages = [
 
 const TechStack = ({gradient}) => {
   const {typedText, ref, isDone} =useTypeOnVisible("TechStack", 100);
-  const [languageRef, isVisible] = useOnScreen();
+  const [languageRef, isVisible] = useOnScreen(0.2);
   return (
     <>
       <div  ref={ref} className={`mt-20 mb-10 text-5xl text-center ${gradient}`}>{typedText}
