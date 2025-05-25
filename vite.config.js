@@ -10,6 +10,9 @@ export default defineConfig({
     tailwindcss(),
     svgr()
   ],
+  build: {
+    outDir: 'build'
+  },
   server: {
     host: true,
     port: 3001,
