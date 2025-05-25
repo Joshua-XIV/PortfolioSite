@@ -11,6 +11,7 @@ import TailwindCSSLogo from "../assets/tailwindcss.svg";
 import CSSLogo from "../assets/csslogo.svg";
 import HTMLLogo from "../assets/html.svg";
 import useTypeOnVisible from "../hooks/useTypeOnVisible"
+import { useOnScreen } from "../hooks/useOnScreen";
 
 const languages = [
   { image: CPlusPlusLogo, name: "C++" },
@@ -28,18 +29,20 @@ const languages = [
 
 const TechStack = ({gradient}) => {
   const {typedText, ref} =useTypeOnVisible("TechStack", 100);
+  const [languageRef, isVisible] = useOnScreen();
   return (
     <>
       <div  ref={ref} className={`mt-20 mb-10 text-5xl text-center ${gradient}`}>{typedText}
         <span className={`${gradient} cursor text-5xl`}>|</span>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4">
+      <div ref={languageRef} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4">
         {languages.map(({image, name}, index) => (
           <LangFrameDisplay 
             key={name} 
             imagePath={image} 
             name={name}
             index={index}
+            triggerAnimation={isVisible}
           />
         ))}
       </div>

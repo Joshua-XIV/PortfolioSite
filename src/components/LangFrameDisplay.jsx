@@ -1,22 +1,20 @@
 import React, { useEffect, useState } from 'react'
-import { useOnScreen } from '../hooks/useOnScreen';
 
-const LangFrameDisplay = ({imagePath, name, index, delay = 175}) => {
-  const [ref, isVisible] = useOnScreen();
+const LangFrameDisplay = ({imagePath, name, index, triggerAnimation, delay = 175}) => {
   const [delayVisible, setDelayVisible] = useState(false);
   const delayStyle = `duration-${delay}`
   useEffect(() => {
-    if (isVisible) {
+    if (triggerAnimation) {
       const timeout =setTimeout(() => {
         setDelayVisible(true);
       }, index * delay);
 
       return () => clearTimeout(timeout);
     }
-  }, [isVisible, index]);
+  }, [triggerAnimation, index]);
 
   return (
-    <section ref={ref} 
+    <section
     className={`border-green-500 border-2 rounded-xl shadow-md relative 
     px-4 py-2 transform transition-transform ${delayStyle} ease-in-out opacity-0
     ${delayVisible ? "opacity-100 translate-x-0 translate-y-0" : (index % 2 === 0 ? "-translate-x-24 translate-y-24" : "translate-x-24 -translate-y-24")}
