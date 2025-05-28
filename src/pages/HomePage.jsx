@@ -13,7 +13,7 @@ const HomePage = () => {
       location="United States" 
       countryCode="US"
       githubURL="https://github.com/Joshua-XIV"
-      linkedInURL="https://www.linkedin.com/in/joshua-hernandez-77306b334/"/>
+      linkedInURL="https://www.linkedin.com/in/joshua956/"/>
       <div className="mx-auto md:w-3xl lg:w-4xl mt-20 mb-20">
         <AboutMe gradient={gradient}/>
         <TechStack gradient={gradient}/>
