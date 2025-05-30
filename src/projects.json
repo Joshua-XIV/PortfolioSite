@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Weather App",
+    "desc": "Mobile Weather App that allows users to search multiple locations for real-time weather information",
+    "languages": ["React", "React Native", "JavaScript", "Python", "FastAPI"],
+    "long desc": ""
+  },
+  {
+    "name": "QuickRoom",
+    "desc": "Real Time Collaborative Chat Room, featuring text, audio, and video chats. Rooms can set to be open to the public browser list for anyone to join.",
+    "languages": ["React", "JavaScript", "Node.JS", "TailwindCSS"],
+    "long desc": ""
+  }
+]
