@@ -1,3 +1,5 @@
+import React from 'react'
+import { useOnScreen } from '../hooks/useOnScreen'
 import {FaArrowRight } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 
@@ -5,7 +7,7 @@ const ProjectDisplay = ({name, image, desc, languages}) => {
 
   return (
     <div className='p-3 relative transition duration-300 hover:scale-105'>
-      <div className='border-green-500 border-2 rounded-xl p-2 space-y-4 bg-white/5 text-white flex flex-col h-full'>
+      <div className='gradient-border p-3 rounded-xl space-y-4 bg-white/5 text-white flex flex-col h-full' style={{'--padding' : '2px', '--inset' : "0.75rem"}}>
         <img src={image} alt='Img' className='w-full h-48 object-cover'></img>
         <div className='flex justify-between items-center pb-4 w-full h-auto'>
           <p className='text-3xl'>{name}</p>

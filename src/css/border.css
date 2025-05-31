@@ -1,0 +1,47 @@
+:root {
+  --clr-1: #4CAF50;
+  --clr-2: #2196F3;
+}
+
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes rotation {
+  0% { --gradient-angle: 0deg; }
+  100% { --gradient-angle: 360deg; } 
+}
+
+.gradient-border::before,
+.gradient-border::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  inset: var(--inset, -0.1rem);
+  padding: var(--padding, 2px);
+  z-index: var(--z-index, 0);
+  background: conic-gradient(
+    from var(--gradient-angle),
+    var(--clr-1),
+    var(--clr-2),
+    var(--clr-1)
+  );
+
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+
+  border-radius: inherit;
+  animation-name: rotation;
+  animation-duration: var(--animation-duration, 5s);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}

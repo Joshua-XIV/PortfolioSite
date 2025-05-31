@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const Footer = ({gradient, firstName, LastName, githubLink, linkedInLink}) => {
   return (
     <section className='mx-auto md:w-3xl lg:w-4xl mt-20 mb-20 appear'>
-      <div className='flex justify-center items-center border-green-500 border-2 rounded-xl py-5'>
+      <div className='flex justify-center items-center gradient-border border-2 relative rounded-xl py-5'>
         <div className='flex flex-row w-full space-x-8'>
 
           {/* Name Section */}
