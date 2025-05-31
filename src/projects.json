@@ -10,7 +10,21 @@
     "name": "QuickRoom",
     "images": ["quickroomhome.jpg", "createroom.jpg", "browseroom.jpg"],
     "desc": "Real Time Collaborative Chat Room, featuring text, audio, and video chats. Rooms can set to be open to the public browser list for anyone to join.",
-    "languages": ["React", "JavaScript", "Node.JS", "Express.JS", "TailwindCSS"],
+    "languages": ["React", "JavaScript", "Node.JS", "Express.JS", "TailwindCSS", "HTML"],
     "longDesc": "This full-stack web application is a personal project using React for the front and Express/Node.js for the backend. Users are free to create rooms for up to 20 users max, being able to communicate through text, audio, and even video chat. Users are free to browse all available public rooms and sort by current User count of each room. Rooms can be password protected and even set to private to avoid showing up in the browse list. \n\n When creating a room, a random code is generated of 8 a mix of characters and digits. Rooms can be joined via code through the home page if available or through a shared url link of the current room. More features are to come soon, such as kicking users from the room and/or muting users. \n\n This project demonstrates custom backend logic, real-time communication, and dynamic UI handling across both client and server, and offers a simple UI implementation with the primary goal of gaining experience with WebSockets, WebRTC, and hands-on full-stack deployment."
+  },
+  {
+    "name": "Dalamud",
+    "images": ["dalamud.png"],
+    "desc": "Custom plugins enhancing FFXIV gameplay with quality-of-life features and task automation through game integration.",
+    "languages": ["C#", ".NET"],
+    "longDesc": "Developed three custom plugins using C# and the .NET framework under the Dalamud plugin framework to enhance and automate various gameplay activities in Final Fantasy XIV. These plugins utilize Dalamud's game integration capabilities to streamline tasks, improving quality of life for players. These projects demonstrate practical use of asynchronous programming, memory reading, and in-game event hooks. \n\n <b>Eureka Bunny FATE Automation</b> \nAutomates Eureka’s Bunny FATEs by tracking FATE availability and progression, assisting with navigation, and tracking of total gil earned and items received from lockbox rewards. \n\n <b>Treasure Map Automation</b>\n Automates the entire process of completing treasure maps. The plugin reads map data from the player’s inventory, automatically posts map coordinates in party chat, navigates the player to the map location, and triggers interactions to streamline the entire map-running experience. \n\n<b>Fishing Scrip Automation</b>\n Automates the collection of gathering scrips through fishing. The plugin manages bait selection, navigates to collectable fishing locations, and automates turn-ins for scrips, also providing various config options during fishing such as extracting materia, repairing gear, etc."
+  },
+  {
+    "name": "Portfolio",
+    "images": ["portfolio.png"],
+    "desc": "Portfolio to showcase my projects, knowledge of languages and frameworks, and fun information about myself.",
+    "languages": ["React", "JavaScript", "TailwindCSS", "CSS", "HTML"],
+    "longDesc": "This personal portfolio was built using React for the frontend and styled with TailwindCSS to ensure a responsive, modern UI. It serves as a central hub to showcase my development projects, highlight my proficiency in various programming languages and frameworks, and share more about my background and interests."
   }
 ]

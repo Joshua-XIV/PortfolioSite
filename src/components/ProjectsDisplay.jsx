@@ -7,13 +7,17 @@ const imageMap = import.meta.glob("../assets/*", {
   import: "default",
 });
 
-const ProjectsDisplay = ({gradient}) => {
+const ProjectsDisplay = ({gradient, home = true}) => {
   const {typedText, ref, isDone} = useTypeOnVisible("Projects", 100)
   return (
     <div>
       <div ref={ref} className={`${gradient} text-5xl text-center mt-20 h-20`}> {typedText} 
         {!isDone && <span className={`text-5xl ${gradient} cursor`}>|</span>}
       </div>
+      {!home && 
+      <div className={`text-xl text-center ${gradient}`}>
+        More Coming Soon...
+      </div>}
       <div className="grid grid-cols-1 md:grid-cols-2">
         {projects.map(({name, images, desc, languages}, index) => {
           const firstImage = images[0];

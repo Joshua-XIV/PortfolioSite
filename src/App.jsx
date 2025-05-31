@@ -5,14 +5,16 @@ import MainLayout from "./layouts/MainLayout";
 import ProjectPage from "./pages/ProjectPage";
 import ProjectsPage from "./pages/ProjectsPage";
 
+const gradient = "bg-gradient-to-br from-blue-500 to-green-500 bg-clip-text text-transparent"
+
 const router = createBrowserRouter([
   {
     path: "/", 
     element: <MainLayout/>,
     children: [
-      {index: true, element: <HomePage/>},
+      {index: true, element: <HomePage gradient={gradient}/>},
       {path: "about", element: <AboutPage/>},
-      {path: "projects", element: <ProjectsPage/>},
+      {path: "projects", element: <ProjectsPage gradient={gradient}/>},
       {path: "projects/:name", element: <ProjectPage/>},
     ]
   }

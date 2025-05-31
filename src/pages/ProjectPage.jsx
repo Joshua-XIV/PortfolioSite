@@ -24,12 +24,19 @@ const ProjectPage = () => {
       <h2 ref={ref} className={`flex justify-center text-4xl ${gradient}`}>{typedText} {!isDone && <span className={`text-4xl ${gradient} cursor`}>|</span>}</h2>
       <div className="flex justify-center items-center p-2 mb-10">
         <div className="w-xl md:w-4xl p-4 rounded-2xl text-indigo-200">
-          {project.longDesc.split('\n').map((line, idx) => (
-          <p key={idx}>
-            {line}
-            <br />
-          </p>
-          ))}
+          {project.longDesc.split('\n').map((line, idx) => {
+            const parts = line.split(/(<b>.*?<\/b>)/g);
+            return (
+              <p key={idx} className="mb-4">
+                {parts.map((part, i) => {
+                  if (part.startsWith('<b>') && part.endsWith('</b>')) {
+                    return <strong key={i}>{part.slice(3, -4)}</strong>;
+                  }
+                  return <span key={i}>{part}</span>;
+                })}
+              </p>
+            );
+          })}
         </div>
       </div>
     </div>
