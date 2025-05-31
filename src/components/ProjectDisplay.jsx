@@ -1,5 +1,3 @@
-import React from 'react'
-import { useOnScreen } from '../hooks/useOnScreen'
 import {FaArrowRight } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 
