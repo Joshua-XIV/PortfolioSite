@@ -14,7 +14,7 @@
     "longDesc": "This full-stack web application is a personal project using React for the front and Express/Node.js for the backend. Users are free to create rooms for up to 20 users max, being able to communicate through text, audio, and even video chat. Users are free to browse all available public rooms and sort by current User count of each room. Rooms can be password protected and even set to private to avoid showing up in the browse list. \n\n When creating a room, a random code is generated of 8 a mix of characters and digits. Rooms can be joined via code through the home page if available or through a shared url link of the current room. More features are to come soon, such as kicking users from the room and/or muting users. \n\n This project demonstrates custom backend logic, real-time communication, and dynamic UI handling across both client and server, and offers a simple UI implementation with the primary goal of gaining experience with WebSockets, WebRTC, and hands-on full-stack deployment."
   },
   {
-    "name": "Dalamud",
+    "name": "Dalamud Plugins",
     "images": ["dalamud.png", "plugins.png", "autoscrip.png", "autoscripconfig.png"],
     "desc": "Developed 3 plugins enhancing FFXIV's gameplay with quality-of-life features and task automation through game integration.",
     "languages": ["C#", ".NET", "GUI"],
