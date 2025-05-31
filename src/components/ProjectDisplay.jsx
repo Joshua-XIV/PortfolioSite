@@ -8,7 +8,7 @@ const ProjectDisplay = ({name, image, desc, languages}) => {
   return (
     <div className='p-3 relative transition duration-300 hover:scale-105'>
       <div className='border-green-500 border-2 rounded-xl p-2 space-y-4 bg-white/5 text-white flex flex-col h-full'>
-        <img src={image} alt='Img' className=''></img>
+        <img src={image} alt='Img' className='w-full h-48 object-cover'></img>
         <div className='flex justify-between items-center pb-4 w-full h-auto'>
           <p className='text-3xl'>{name}</p>
           <Link to={`/projects/${name}`} className='border-1 border-white rounded-3xl p-2 relative shine overflow-hidden transition duration-300 hover:scale-105 flex space-x-2 items-center cursor-pointer'>

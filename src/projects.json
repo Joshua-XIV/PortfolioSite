@@ -1,7 +1,7 @@
 [
   {
     "name": "Weather App",
-    "images": ["quickroomhome.jpg"],
+    "images": ["WeatherCityTemperatureView.png", "WeatherCityInfoView.png", "WeatherGridView.png", "WeatherAutoComplete.png", "WeatherDelete.png"],
     "desc": "Mobile Weather App that allows users to search multiple locations for real-time weather information",
     "languages": ["React", "React Native", "JavaScript", "Python", "FastAPI"],
     "longDesc": "This weather app is a personal project using React Native for the frontend and FastAPI for the backend. It enables users to search for and view detailed, real-time weather data for any city using the WeatherAPI. The app displays current conditions such as temperature, humidity, wind speed and direction, UV index, and time zone information. It also features an hourly forecast for the current day and a 10-day extended forecast. \n\n Users can save multiple locations, allowing quick access to frequently checked cities. Each city's weather data is dynamically updated through API calls, with a responsive and intuitive UI that changes icons and visuals based on conditions (sunny, rainy, cloudy, etc). The backend handles API key security and supports autocomplete city search when looking for a desire city. \n\n This project highlights the use of asynchronous API integration, secure state management, offering a practical and user-friendly weather tracking tool."
