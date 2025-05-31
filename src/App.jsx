@@ -13,7 +13,7 @@ const router = createBrowserRouter([
     element: <MainLayout/>,
     children: [
       {index: true, element: <HomePage gradient={gradient}/>},
-      {path: "about", element: <AboutPage/>},
+      {path: "about", element: <AboutPage gradient={gradient}/>},
       {path: "projects", element: <ProjectsPage gradient={gradient}/>},
       {path: "projects/:name", element: <ProjectPage/>},
     ]
