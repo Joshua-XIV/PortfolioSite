@@ -7,7 +7,7 @@ import LinkedInIcon from '../assets/linkedin-outline.svg?react'
 const HomeHero = ({name, location, countryCode, githubURL, linkedInURL}) => {
   return (
     <>
-    <section className='border-b-1 border-white pb-20 pt-8'>
+    <section className='border-b-1 border-white/30 pb-20 pt-8'>
       <div className='flex flex-col items-center justify-center pt-12'>
         <div className='flex items-center'>
           <img src={Image} alt='Image' className='w-32 h-32'></img>

@@ -1,9 +1,11 @@
 import ProjectDisplay from "./ProjectDisplay"
 import useTypeOnVisible from "../hooks/useTypeOnVisible"
-import QuickRoom from "../assets/quickroomhome.jpg"
 import projects from "../projects.json"
 
-const projectImages = [QuickRoom, QuickRoom]
+const imageMap = import.meta.glob("../assets/*", {
+  eager: true,
+  import: "default",
+});
 
 const ProjectsDisplay = ({gradient}) => {
   const {typedText, ref, isDone} = useTypeOnVisible("Projects", 100)
@@ -13,9 +15,13 @@ const ProjectsDisplay = ({gradient}) => {
         {!isDone && <span className={`text-5xl ${gradient} cursor`}>|</span>}
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2">
-        {projects.map(({name, desc, languages}, index) => (
-          <ProjectDisplay key={index} name={name} image={projectImages[index]} desc={desc} languages={languages}></ProjectDisplay>
-        ))}
+        {projects.map(({name, images, desc, languages}, index) => {
+          const firstImage = images[0];
+          const resolvedImage = imageMap[`../assets/${firstImage}`];
+          return (
+          <ProjectDisplay key={index} name={name} image={resolvedImage} desc={desc} languages={languages}></ProjectDisplay>
+          )
+        })}
       </div>
     </div>
   )

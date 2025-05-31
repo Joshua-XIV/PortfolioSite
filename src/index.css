@@ -21,7 +21,7 @@
   filter: blur(1px);
   opacity: 0.5;
   top: -50px;
-  transition: 1.0s;
+  transition: 0.75s;
   transform: rotate(-10deg) translateX(-60px);
 }
 .shine:hover::before{
