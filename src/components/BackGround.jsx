@@ -1,6 +1,6 @@
 const BackGround = () => {
   return (
-    <div className="fixed inset-0 -z-20 h-screen w-full bg-black"></div>
+    <div className="fixed inset-0 -z-20 h-screen w-screen bg-black"></div>
   );
 };
 
