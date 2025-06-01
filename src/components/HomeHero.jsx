@@ -1,4 +1,4 @@
-import Image from '../assets/react.svg'
+import Image from '../assets/me1.jpg'
 import Flag from 'react-world-flags'
 import { Link } from 'react-router-dom'
 import GithubIcon from '../assets/github-outline.svg?react'
@@ -10,7 +10,10 @@ const HomeHero = ({name, location, countryCode, githubURL, linkedInURL}) => {
     <section className='border-b-1 border-white/30 pb-20 pt-8'>
       <div className='flex flex-col items-center justify-center pt-12'>
         <div className='flex items-center'>
-          <img src={Image} alt='Image' className='w-32 h-32 go-right'></img>
+          <div
+            className="w-32 h-32 border-2 border-white rounded-full bg-center bg-no-repeat bg-cover go-right"
+            style={{ backgroundImage: `url(${Image})`, backgroundSize: '90%' }}
+          />
           <div className='text-white pl-4'>
             <div className='font-bold text-2xl go-down' style={{'--animation-delay': '0.15s' }}>
               {name}
