@@ -10,6 +10,8 @@ import TypeScriptLogo from "../assets/typescript.svg";
 import TailwindCSSLogo from "../assets/tailwindcss.svg";
 import CSSLogo from "../assets/csslogo.svg";
 import HTMLLogo from "../assets/html.svg";
+import MySQLLogo from "../assets/mysql.svg"
+import PostgreSQLLogo from "../assets/postgresql.svg"
 import useTypeOnVisible from "../hooks/useTypeOnVisible"
 import { useOnScreen } from "../hooks/useOnScreen";
 
@@ -25,6 +27,8 @@ const languages = [
   { image: TailwindCSSLogo, name: "TailwindCSS" },
   { image: CSSLogo, name: "CSS" },
   { image: HTMLLogo, name: "HTML" },
+  { image: MySQLLogo, name: "MySQL"},
+  { image: PostgreSQLLogo, name: "PostgreSQL"}
 ];
 
 const TechStack = ({gradient}) => {
