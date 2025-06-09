@@ -12,7 +12,7 @@ const schools = [
 const Educations = ({gradient}) => {
   const {typedText, ref, isDone} = useTypeOnVisible("Education", 100);
   return (
-    <section>
+    <section className="px-2">
       <div ref={ref} className={`mt-20 mb-10 text-5xl text-center ${gradient}`}>{typedText}
         {!isDone && <span className={`text-5xl ${gradient} cursor`}>|</span>}
       </div>

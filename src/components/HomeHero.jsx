@@ -24,7 +24,7 @@ const HomeHero = ({name, location, countryCode, githubURL, linkedInURL}) => {
             </div>
           </div>
         </div>
-        <div className='text-white text-7xl md:text-8xl font-bold font-[fira sans]'>
+        <div className='text-white text-6xl sm:text-7xl md:text-8xl font-bold font-[fira sans]'>
           <div className='go-up' style={{'--animation-delay': '0.45s' }}>FULLSTACK</div>
           <div className='go-right' style={{'--animation-delay': '0.6s' }}>DEVELOPER</div>
           <div className='flex justify-end space-x-4 mt-2 mr-5'>

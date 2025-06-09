@@ -26,13 +26,17 @@ const ProjectPage = () => {
   return (
     <div key={project.name} className="text-white flex flex-col justify-center w-full pt-20 appear">
       <h1 className="flex justify-center text-6xl font-montserrat font-bold py-10 mb-10 border-b-2 border-white/30">{project.name} </h1>
-      <Carousel imagePaths={project.images}/>
-      <div className="flex justify-center space-x-4 mb-10">
-        {project.languages.map((lang) => (
-          <div key={lang} className="w-auto border-2 bg-white p-2 rounded-2xl text-black">
-            {lang}
-          </div>
-        ))}
+      <div className="px-4">
+        <Carousel imagePaths={project.images}/>
+      </div>
+      <div>
+        <div className="flex flex-wrap items-start space-x-4 space-y-2 mb-10 px-2 justify-center">
+          {project.languages.map((lang) => (
+            <div key={lang} className="w-auto border-2 bg-white p-2 rounded-2xl text-black">
+              {lang}
+            </div>
+          ))}
+        </div>
       </div>
       <h2 ref={ref} className={`flex justify-center text-4xl ${gradient}`}>{typedText} {!isDone && <span className={`text-4xl ${gradient} cursor`}>|</span>}</h2>
       <div className="flex justify-center items-center p-2 mb-10">

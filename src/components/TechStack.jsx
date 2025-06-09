@@ -39,7 +39,7 @@ const TechStack = ({gradient}) => {
       <div  ref={ref} className={`mt-20 mb-10 text-5xl text-center ${gradient}`}>{typedText}
         {!isDone && <span className={`text-5xl ${gradient} cursor`}>|</span>}
       </div>
-      <div ref={languageRef} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4">
+      <div ref={languageRef} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4 overflow-hidden">
         {languages.map(({image, name}, index) => (
           <LangFrameDisplay 
             key={name} 
