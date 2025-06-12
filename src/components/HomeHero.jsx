@@ -43,8 +43,8 @@ const HomeHero = ({name, location, countryCode, githubURL, linkedInURL}) => {
             </a>
             <a href={Resume} target="_blank" rel="noopener noreferrer" className='group relative'>
               <CVIcon 
-                className="w-9 h-9 fill-white transition-transform duration-150 group-hover:scale-120 group-hover:fill-green-300 group-hover:-rotate-15 go-left"
-                style={{'--animation-delay': '0.90s' }}
+                className="w-9 h-9 fill-white transition-transform duration-150 group-hover:scale-120 group-hover:fill-green-300 group-hover:-rotate-15 go-down"
+                style={{'--animation-delay': '1.05s' }}
               />
             </a>
           </div>
