@@ -1,8 +1,9 @@
 import Image from '../assets/me1.jpg'
 import Flag from 'react-world-flags'
-import { Link } from 'react-router-dom'
+import Resume from '../assets/JoshHdzFullResume.pdf'
 import GithubIcon from '../assets/github-outline.svg?react'
 import LinkedInIcon from '../assets/linkedin-outline.svg?react'
+import CVIcon from '../assets/cv.svg?react'
 
 const HomeHero = ({name, location, countryCode, githubURL, linkedInURL}) => {
   return (
@@ -27,19 +28,25 @@ const HomeHero = ({name, location, countryCode, githubURL, linkedInURL}) => {
         <div className='text-white text-6xl sm:text-7xl md:text-8xl font-bold font-[fira sans]'>
           <div className='go-up' style={{'--animation-delay': '0.45s' }}>FULLSTACK</div>
           <div className='go-right' style={{'--animation-delay': '0.6s' }}>DEVELOPER</div>
-          <div className='flex justify-end space-x-4 mt-2 mr-5'>
-            <Link to={githubURL} className='group relative'>
+          <div className='flex justify-end space-x-4 mt-2 mr-5 items-center'>
+            <a href={githubURL} target="_blank" rel="noopener noreferrer" className='group relative'>
               <GithubIcon 
-                className="w-10 h-10 text-white transition-transform duration-150 group-hover:scale-120 group-hover:text-green-300 group-hover:-rotate-15 go-up"
+                className="w-10 h-10 text-white transition-transform duration-150 group-hover:scale-120 group-hover:text-green-300 group-hover:-rotate-15 go-up overflow-hidden"
                 style={{'--animation-delay': '0.75s' }}
               />
-            </Link>
-            <Link to={linkedInURL} className='group relative'>
+            </a>
+            <a href={linkedInURL} target="_blank" rel="noopener noreferrer" className='group relative'>
               <LinkedInIcon 
                 className="w-10 h-10 fill-white transition-transform duration-150 group-hover:scale-120 group-hover:fill-green-300 group-hover:-rotate-15 go-left"
                 style={{'--animation-delay': '0.90s' }}
               />
-            </Link>
+            </a>
+            <a href={Resume} target="_blank" rel="noopener noreferrer" className='group relative'>
+              <CVIcon 
+                className="w-9 h-9 fill-white transition-transform duration-150 group-hover:scale-120 group-hover:fill-green-300 group-hover:-rotate-15 go-left"
+                style={{'--animation-delay': '0.90s' }}
+              />
+            </a>
           </div>
         </div>
       </div>
