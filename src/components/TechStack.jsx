@@ -12,13 +12,17 @@ import CSSLogo from "../assets/csslogo.svg";
 import HTMLLogo from "../assets/html.svg";
 import MySQLLogo from "../assets/mysql.svg"
 import PostgreSQLLogo from "../assets/postgresql.svg"
+import SwiftLogo from "../assets/swift.svg"
+import FastApiLogo from "../assets/FastAPI.svg"
 import useTypeOnVisible from "../hooks/useTypeOnVisible"
 import { useOnScreen } from "../hooks/useOnScreen";
 
 const languages = [
   { image: CPlusPlusLogo, name: "C++" },
   { image: CSharpLogo, name: "C#" },
+  { image: SwiftLogo, name: "Swift"},
   { image: PythonLogo, name: "Python" },
+  { image: FastApiLogo, name: "FastAPI"},
   { image: LuaLogo, name: "Lua" },
   { image: ReactLogo, name: "React" },
   { image: NodeJSLogo, name: "NodeJS" },
@@ -39,7 +43,7 @@ const TechStack = ({gradient}) => {
       <div  ref={ref} className={`mt-20 mb-10 text-5xl text-center ${gradient}`}>{typedText}
         {!isDone && <span className={`text-5xl ${gradient} cursor`}>|</span>}
       </div>
-      <div ref={languageRef} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4 overflow-hidden">
+      <div ref={languageRef} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4 py-2 overflow-hidden">
         {languages.map(({image, name}, index) => (
           <LangFrameDisplay 
             key={name} 
