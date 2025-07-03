@@ -14,6 +14,9 @@ import MySQLLogo from "../assets/mysql.svg"
 import PostgreSQLLogo from "../assets/postgresql.svg"
 import SwiftLogo from "../assets/swift.svg"
 import FastApiLogo from "../assets/FastAPI.svg"
+import DockerLogo from "../assets/docker.svg"
+import KubernetesLogo from "../assets/kubernetes.svg"
+import AWSLogo from "../assets/aws.svg"
 import useTypeOnVisible from "../hooks/useTypeOnVisible"
 import { useOnScreen } from "../hooks/useOnScreen";
 
@@ -32,7 +35,10 @@ const languages = [
   { image: CSSLogo, name: "CSS" },
   { image: HTMLLogo, name: "HTML" },
   { image: MySQLLogo, name: "MySQL"},
-  { image: PostgreSQLLogo, name: "PostgreSQL"}
+  { image: PostgreSQLLogo, name: "PostgreSQL"},
+  { image: DockerLogo, name: "Docker"},
+  { image: KubernetesLogo, name: "Kubernetes"},
+  { image: AWSLogo, name: "AWS"}
 ];
 
 const TechStack = ({gradient}) => {
