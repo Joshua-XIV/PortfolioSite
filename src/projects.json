@@ -1,10 +1,10 @@
 [
   {
-    "name": "Weather App",
-    "images": ["WeatherCityTemperatureView.png", "WeatherCityInfoView.png", "WeatherGridView.png", "WeatherAutoComplete.png", "WeatherDelete.png"],
-    "desc": "Mobile Weather App that allows users to search multiple locations for real-time weather information",
-    "languages": ["React", "React Native", "JavaScript", "Python", "FastAPI"],
-    "longDesc": "This weather application is a personal project using React Native for the frontend and FastAPI for the backend. It enables users to search for and view detailed, real-time weather data for any city using the WeatherAPI. The app displays current conditions such as temperature, humidity, wind speed and direction, UV index, and time zone information. It also features an hourly forecast for the current day and a 10-day extended forecast. \n\n Users can save multiple locations, allowing quick access to frequently checked cities. Each city's weather data is dynamically updated through API calls, with a responsive and intuitive UI that changes icons and visuals based on conditions (sunny, rainy, cloudy, etc). The backend handles API key security and supports autocomplete city search when looking for a desire city. \n\n This project highlights the use of asynchronous API integration, secure state management, offering a practical and user-friendly weather tracking tool."
+    "name": "Social Media Site",
+    "images": ["postcomment.png", "searchresult.png", "avatar.png", "jobposthome.png", "jobpostfulldesc.png"],
+    "desc": "Full-stack social media platform with real-time posts, comments, profiles, and secure authentication features.",
+    "languages": ["React", "TypeScript", "JavaScript", "Node.js", "Docker", "AWS"],
+    "longDesc": "This is a full-stack web application built with React, TypeScript, and Node.js, deployed using Docker containers on AWS EC2. The platform includes 8+ core features such as real-time posts, threaded comments, user profiles, and secure authentication. The authentication system supports JWT-based login, email verification workflows, and rate limiting for enhanced security. \n\n The backend features over 15 REST API endpoints with structured error handling and logging. A custom logging system was implemented to track user actions and errors, with automated cleanup and 30-day retention policies. Real-time features are handled with WebSocket support. \n\n The project demonstrates advanced DevOps practices with containerized deployment, consistent dev-to-prod environments, and command-based log analysis tooling. Designed for scalability and maintainability, the app balances modern UI with robust backend logic."
   },
   {
     "name": "QuickRoom",
@@ -19,6 +19,13 @@
     "desc": "Developed 3 plugins enhancing FFXIV's gameplay with quality-of-life features and task automation through game integration.",
     "languages": ["C#", ".NET", "GUI"],
     "longDesc": "Developed three custom plugins using C#, GUI, and .NET under the Dalamud plugin framework to enhance and automate various gameplay activities in Final Fantasy XIV. These plugins utilize Dalamud's game integration capabilities to streamline tasks, improving quality of life for players. These projects demonstrate practical use of asynchronous programming, memory reading, and in-game event hooks. \n\n <b>Eureka Bunny FATE Automation</b> \nAutomates Eureka’s Bunny FATEs by tracking FATE availability and progression, assisting with navigation, and tracking of total gil earned and items received from lockbox rewards. \n\n <b>Treasure Map Automation</b>\n Automates the entire process of completing treasure maps. The plugin reads map data from the player’s inventory, automatically posts map coordinates in party chat, navigates the player to the map location, and triggers interactions to streamline the entire map-running experience. \n\n<b>Fishing Scrip Automation</b>\n Automates the collection of gathering scrips through fishing. The plugin manages bait selection, navigates to collectable fishing locations, and automates turn-ins for scrips, also providing various config options during fishing such as extracting materia, repairing gear, etc."
+  },
+  {
+    "name": "Weather App",
+    "images": ["WeatherCityTemperatureView.png", "WeatherCityInfoView.png", "WeatherGridView.png", "WeatherAutoComplete.png", "WeatherDelete.png"],
+    "desc": "Mobile Weather App that allows users to search multiple locations for real-time weather information",
+    "languages": ["React", "React Native", "JavaScript", "Python", "FastAPI"],
+    "longDesc": "This weather application is a personal project using React Native for the frontend and FastAPI for the backend. It enables users to search for and view detailed, real-time weather data for any city using the WeatherAPI. The app displays current conditions such as temperature, humidity, wind speed and direction, UV index, and time zone information. It also features an hourly forecast for the current day and a 10-day extended forecast. \n\n Users can save multiple locations, allowing quick access to frequently checked cities. Each city's weather data is dynamically updated through API calls, with a responsive and intuitive UI that changes icons and visuals based on conditions (sunny, rainy, cloudy, etc). The backend handles API key security and supports autocomplete city search when looking for a desire city. \n\n This project highlights the use of asynchronous API integration, secure state management, offering a practical and user-friendly weather tracking tool."
   },
   {
     "name": "Portfolio",
