@@ -24,7 +24,7 @@ const ProjectPage = () => {
   if (!project) return null;
 
   return (
-    <div key={project.name} className="text-white flex flex-col justify-center w-full pt-20 appear">
+    <div key={project.name} className="text-white flex flex-col justify-center w-full pt-20 appear relative">
       <h1 className="flex justify-center text-6xl font-montserrat font-bold py-10 mb-10 border-b-2 border-white/30">{project.name} </h1>
       <div className="px-4">
         <Carousel imagePaths={project.images}/>
@@ -56,6 +56,22 @@ const ProjectPage = () => {
           })}
         </div>
       </div>
+      {/* Source code section below description */}
+      {project.source && (
+        <div className="flex flex-col items-center mb-10">
+          <span className="text-lg font-semibold bg-gradient-to-br from-blue-500 to-green-500 bg-clip-text text-transparent mb-3">Source Code</span>
+          <a
+            href={project.source}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center space-x-2 px-6 py-2 rounded-full bg-gradient-to-br from-blue-500 to-green-500 text-white font-semibold shadow-md transition-transform duration-200 hover:scale-105"
+            aria-label="Source Code"
+          >
+            <span className="text-xl">&lt;/&gt;</span>
+            <span>View Repository</span>
+          </a>
+        </div>
+      )}
     </div>
   )
 }
