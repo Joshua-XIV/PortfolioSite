@@ -4,7 +4,14 @@ import OregonLogo from "../assets/oregonstate.svg"
 import useTypeOnVisible from "../hooks/useTypeOnVisible"
 
 const schools = [
-  {name: "Oregon State University", degreeType: "B.S", degreeMajor: "Computer Science", startingDate: "September 2023", endingDate: "", imagePath: OregonLogo, scale: 75},
+  {
+    name: "Oregon State University", 
+    degreeType: "B.S", 
+    degreeMajor: "Computer Science", 
+    startingDate: "September 2023", 
+    endingDate: "", 
+    imagePath: OregonLogo, 
+    scale: 75},
 ]
 
 
