@@ -4,7 +4,6 @@ import OregonLogo from "../assets/oregonstate.svg"
 import useTypeOnVisible from "../hooks/useTypeOnVisible"
 
 const schools = [
-  {name: "Austin Community College", degreeType: "AS", degreeMajor: "Computer Science", startingDate: "August 2023", endingDate: "May 2025", imagePath: ACCLogo, scale: 150},
   {name: "Oregon State University", degreeType: "B.S", degreeMajor: "Computer Science", startingDate: "September 2025", endingDate: "", imagePath: OregonLogo, scale: 75},
 ]
 
