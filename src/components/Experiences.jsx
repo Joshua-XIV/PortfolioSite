@@ -32,8 +32,9 @@ const Experiences = ({gradient}) => {
       <div className="px-2 relative">
         <div className="absolute left-16 top-0 bottom-0 w-0.5 bg-gradient-to-br from-blue-500 to-green-500 -z-1"></div>
         <div className="gradient-border border-2 rounded-xl p-2 space-y-10">
-          {jobs.map(({company, role, startDate, endDate, description, imagePath, scale}) => (
+          {jobs.map(({company, role, startDate, endDate, description, imagePath, scale}, idx) => (
             <Experience
+              key={idx}
               company={company}
               role={role}
               startDate={startDate}

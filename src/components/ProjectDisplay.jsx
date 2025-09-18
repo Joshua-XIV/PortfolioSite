@@ -31,8 +31,8 @@ const ProjectDisplay = ({name, image, desc, languages, source}) => {
         </div>
         <div className='text-[14px] text-indigo-200'>{desc}</div>
         <div className='flex flex-wrap space-x-2 space-y-2 mt-auto'>
-          {languages.map((lang) => (
-            <div className='bg-white text-black rounded p-1 w-fit h-fit text-[14px]'>{lang}</div>
+          {languages.map((lang, idx) => (
+            <div className='bg-white text-black rounded p-1 w-fit h-fit text-[14px]' key={idx}>{lang}</div>
           ))}
         </div>
       </div>

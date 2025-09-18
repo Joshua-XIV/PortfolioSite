@@ -21,7 +21,7 @@ const LangFrameDisplay = ({imagePath, name, index, triggerAnimation, delay = 175
     sm:hover:scale-105 md:hover:scale-110`}>
       <div className='text-white flex space-x-4 items-center'>
         <img src={imagePath} alt={name} className='w-15 h-15'></img>
-        <text className='text-indigo-200 text-4xl sm:text-2xl md:text-[16px]'>{name}</text>
+        <span className='text-indigo-200 text-4xl sm:text-2xl md:text-[16px]'>{name}</span>
       </div>
     </section>
   )

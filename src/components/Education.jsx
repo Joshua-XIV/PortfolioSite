@@ -12,9 +12,9 @@ const Education = ({name, degreeType, degreeMajor, startingDate, endingDate = "P
           style={{ backgroundImage: `url(${imagePath})`, backgroundSize: size }}>
         </div>
         <div className="flex flex-col">
-          <text className='text-indigo-200 text-2xl sm:text-2xl md:text-[14px]'>{startingDate} - {endingDate}</text>
-          <text className='text-white text-2xl sm:text-2xl md:text-[20px]'>{name}</text>
-          <text className='text-indigo-200 text-2xl sm:text-2xl md:text-[14px]'>{degreeType} in {degreeMajor}</text>
+          <span className='text-indigo-200 text-2xl sm:text-2xl md:text-[14px]'>{startingDate} - {endingDate}</span>
+          <span className='text-white text-2xl sm:text-2xl md:text-[20px]'>{name}</span>
+          <span className='text-indigo-200 text-2xl sm:text-2xl md:text-[14px]'>{degreeType} in {degreeMajor}</span>
         </div>
       </div>
     </section>
