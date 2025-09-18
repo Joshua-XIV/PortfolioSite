@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-const LangFrameDisplay = ({imagePath, name, index, triggerAnimation, delay = 175}) => {
+const LangFrameDisplay = ({imagePath, name, index, triggerAnimation, delay = 125}) => {
   const [delayVisible, setDelayVisible] = useState(false);
   const delayStyle = `duration-${delay}`
   useEffect(() => {
