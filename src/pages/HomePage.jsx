@@ -3,6 +3,7 @@ import AboutMe from "../components/AboutMe"
 import TechStack from "../components/TechStack"
 import Educations from "../components/Educations"
 import ProjectsDisplay from "../components/ProjectsDisplay"
+import Experiences from "../components/Experiences"
 
 const HomePage = ({gradient}) => {
   return (
@@ -17,6 +18,7 @@ const HomePage = ({gradient}) => {
         <div className="mx-auto md:w-3xl lg:w-4xl mt-20 mb-20 appear">
           <AboutMe gradient={gradient}/>
           <TechStack gradient={gradient}/>
+          <Experiences gradient={gradient}/>
           <Educations gradient={gradient}/>
           <ProjectsDisplay gradient={gradient}/>
         </div>
