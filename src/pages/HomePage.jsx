@@ -17,9 +17,9 @@ const HomePage = ({gradient}) => {
         linkedInURL="https://www.linkedin.com/in/joshua956/"/>
         <div className="mx-auto md:w-3xl lg:w-4xl mt-20 mb-20 appear">
           <AboutMe gradient={gradient}/>
-          <TechStack gradient={gradient}/>
           <Experiences gradient={gradient}/>
           <Educations gradient={gradient}/>
+          <TechStack gradient={gradient}/>
           <ProjectsDisplay gradient={gradient}/>
         </div>
       </div>
