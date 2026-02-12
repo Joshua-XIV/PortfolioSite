@@ -1,15 +1,24 @@
 import Education from "./Education"
-import ACCLogo from "../assets/accLogo.png"
 import OregonLogo from "../assets/oregonstate.svg"
+import SNHULogo from "../assets/SNHU.png"
 import useTypeOnVisible from "../hooks/useTypeOnVisible"
 
 const schools = [
+  {
+    name: "Southern New Hampshire University",
+    degreeType: "B.S", 
+    degreeMajor: "Computer Science", 
+    startingDate: "January", 
+    endingDate: "December 2026", 
+    imagePath: SNHULogo, 
+    scale: 120
+  },
   {
     name: "Oregon State University", 
     degreeType: "B.S", 
     degreeMajor: "Computer Science", 
     startingDate: "September 2023", 
-    endingDate: "", 
+    endingDate: "December 2025", 
     imagePath: OregonLogo, 
     scale: 75
   },
