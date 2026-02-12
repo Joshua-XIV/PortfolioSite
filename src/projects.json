@@ -8,6 +8,14 @@
     "source": "https://github.com/Joshua-XIV/SocialMediaSite"
   },
   {
+    "name": "Personal Data Dashboard",
+    "images": ["GrafanaLogo.png", "PersonalDashboard-1.png","PersonalDashboard-2.png"],
+    "desc": "Interactive dashboard for monitoring and visualizing large-scale metrics and game data in real time.",
+    "languages": ["C#", ".NET", "InfluxDB", "Grafana"],
+    "longDesc": "This Personal Data Dashboard is a system I built to collect, process, and visualize large amounts of metrics from various sources, including game data. Using C#/.NET, the system reads data from memory or logs, processes it into structured formats, and stores it in an InfluxDB time-series database. Grafana is used to create interactive dashboards with real-time graphs, tables, and alerts.\n\nI implemented automated data collection pipelines, batch processing with error handling and retry logic, and custom Grafana dashboards to track hundreds of metrics simultaneously. The system allows monitoring trends over time, analyzing performance, and gaining insights into complex datasets.\n\nThis project taught me how to design end-to-end data pipelines, handle high-frequency data efficiently, and present it in a user-friendly way using visualization tools.",
+    "source": "https://github.com/Joshua-XIV/Influx"
+  },  
+  {
     "name": "QuickRoom",
     "images": ["quickroomhome.jpg", "createroom.jpg", "browseroom.jpg"],
     "desc": "Real Time Collaborative Chat Room, featuring text, audio, and video chats. Rooms can set to be open to the public browser list for anyone to join.",
