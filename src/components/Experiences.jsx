@@ -1,8 +1,22 @@
 import Experience from "./Experience"
+import BlackRockLogo from "../assets/BLK.png"
 import WayhomeLogo from "../assets/WayhomeImg.jpg"
 import useTypeOnVisible  from "../hooks/useTypeOnVisible"
 
 const jobs = [
+  {
+    company: "BlackRock",
+    role: "Software Engineering Intern",
+    startDate: "June 2026",
+    endDate: "August 2026 (Upcoming)",
+    description: [
+      "Incoming Software Engineering Intern for Summer 2026",
+      "Selected for BlackRock’s competitive internship program focused on building scalable financial technology systems",
+      "Will contribute to production-grade software used in global investment and risk management platforms"
+    ],
+    imagePath: BlackRockLogo,
+    scale: 60
+  },
   {
     company: "Wayhome",
     role: "Fullstack Software Engineering Intern",
