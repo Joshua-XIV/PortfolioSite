@@ -1,6 +1,6 @@
 import Image from '../assets/me1.jpg'
 import Flag from 'react-world-flags'
-import Resume from '../assets/JoshuaHdzCSResume.pdf'
+import Resume from '../assets/JoshuaHernandez.pdf'
 import GithubIcon from '../assets/github-outline.svg?react'
 import LinkedInIcon from '../assets/linkedin-outline.svg?react'
 import CVIcon from '../assets/cv.svg?react'
