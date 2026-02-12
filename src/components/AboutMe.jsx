@@ -10,10 +10,10 @@ const AboutMe = ({gradient, home = true}) => {
           {!isDone && <span className={`text-5xl ${gradient} cursor`}>|</span>}
         </div>
         { home && <div className='justify-center mt-4 text-[19px] text-indigo-200 px-4'>
-          I am currently an undergraduate student pursuing my B.S CS degree.
-          I'm always trying to learn new things and improve my skills. 
-          I enjoy solving problems and exploring different areas of technology to better understand how things work. 
-          My goal is to keep growing so I can build useful and meaningful projects in the future.
+          I am currently a Computer Science student in my senior year based in the United States. 
+          I've built full-stack applications used by real users, developed real-time communication platforms, and implemented data processing pipelines and automation tools. 
+          My work has mostly been focused on backend development, database design and optimization, and improving system performance to ensure applications handle real user traffic reliably.
+          I also contribute to frontend development, building intuitive interfaces and interactive features to provide a seamless and engaging user experience.
         </div>}
         { !home && <div className='justify-center mt-4 text-[19px] text-indigo-200 px-4'>
           Hello! My name is Joshua but usually just go by Josh.  I'm a big nerd at heart and have a huge love for all things math, science, and gaming related. 
