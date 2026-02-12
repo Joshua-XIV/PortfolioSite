@@ -7,12 +7,12 @@ const jobs = [
     company: "Wayhome",
     role: "Fullstack Software Engineering Intern",
     startDate: "August 2025",
-    endDate: "Present",
+    endDate: "December 2025",
     description: [
-      "Develop full-stack features using Ruby on Rails, PostgreSQL, and Redis.",
-      "Improve deployment pipelines with Git and GitHub Actions, reducing deploy time by 40%.",
-      "Refactor locality system to PostGIS with SQL, NoSQL, Python, Docker, and Bash.",
-      "Standardize geospatial data handling and ensure 100% successful imports."
+      "Cleaned and standardized 50,000+ property location records by building Python/Pandas pipeline to cross-reference Zillow, Census, and Nominatim geospatial data, then migrated validated data from standalone repository into Rails app with PostGIS, eliminating import failures in staging and production",
+      "Improved response times by 35% by identifying N+1 queries, adding database indexes, implementing Redis caching, and refactoring high-traffic endpoints serving 100+ daily active users",
+      "Built Stripe subscription billing system with idempotency keys and webhook retry logic to prevent duplicate charges, supporting tiered pricing for property owners and renters",
+      "Reduced support tickets by 25% by developing AI chatbot using MCP and WebSockets to answer real-time property availability questions, processing 500+ inquiries in first month of deployment"
     ],
     imagePath: WayhomeLogo,
     scale: 100

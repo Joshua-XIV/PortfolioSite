@@ -11,7 +11,8 @@ const schools = [
     startingDate: "September 2023", 
     endingDate: "", 
     imagePath: OregonLogo, 
-    scale: 75},
+    scale: 75
+  },
 ]
 
 
