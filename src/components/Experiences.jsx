@@ -1,21 +1,21 @@
 import Experience from "./Experience"
-import BlackRockLogo from "../assets/BLK.png"
+import AppleLogo from "../assets/AppleLogo.png"
 import WayhomeLogo from "../assets/WayhomeImg.jpg"
 import useTypeOnVisible  from "../hooks/useTypeOnVisible"
 
 const jobs = [
   {
-    company: "BlackRock",
-    role: "Software Engineering Intern",
-    startDate: "June 2026",
+    company: "Apple",
+    role: "Software Engineering Intern (Webkit Media)",
+    startDate: "May 2026",
     endDate: "August 2026 (Upcoming)",
     description: [
-      "Incoming Software Engineering Intern for Summer 2026",
-      "Selected for BlackRock’s competitive internship program focused on building scalable financial technology systems",
-      "Will contribute to production-grade software used in global investment and risk management platforms"
+      "Incoming Software Engineering Intern on the WebKit Media team for Summer 2026",
+      "Selected for a competitive internship focused on building and improving web media playback systems in WebKit",
+      "Will contribute to production-level code supporting audio and video playback, streaming, and performance across Apple platforms"
     ],
-    imagePath: BlackRockLogo,
-    scale: 60
+    imagePath: AppleLogo,
+    scale: 70
   },
   {
     company: "Wayhome",
