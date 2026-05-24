@@ -1,14 +1,26 @@
 import Experience from "./Experience"
 import AppleLogo from "../assets/AppleLogo.png"
+import AmazonLogo from "../assets/AmazonLogo.jpeg"
 import WayhomeLogo from "../assets/WayhomeImg.jpg"
 import useTypeOnVisible  from "../hooks/useTypeOnVisible"
 
 const jobs = [
   {
+    company: "Amazon",
+    role: "Software Engineering Intern",
+    startDate: "September 2026",
+    endDate: "November 2026 (Upcoming)",
+    description: [
+      "Incoming Software Engineering Intern at Amazon for Fall 2026"
+    ],
+    imagePath: AmazonLogo,
+    scale: 110
+  },
+  {
     company: "Apple",
     role: "Software Engineering Intern (Webkit Media)",
     startDate: "May 2026",
-    endDate: "August 2026 (Upcoming)",
+    endDate: "August 2026 (Present)",
     description: [
       "Incoming Software Engineering Intern on the WebKit Media team for Summer 2026",
       "Selected for a competitive internship focused on building and improving web media playback systems in WebKit",
