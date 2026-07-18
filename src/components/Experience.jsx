@@ -1,5 +1,3 @@
-import useMediaQuery from "../hooks/useMediaQuery"
-
 const Experience = ({ company, role, startDate, endDate, description, shortDescription, imagePath, scale = 100 }) => {
   const size = `${scale}%`
 
