@@ -10,15 +10,15 @@ const HomeHero = ({ name, location, countryCode, githubURL, linkedInURL }) => {
     <>
       <section className="border-b-1 border-white/30 pb-20 pt-8">
         <div className="flex flex-col items-center justify-center pt-12">
-          <div className="flex items-center">
+          <div className="flex flex-col items-center text-center sm:flex-row sm:text-left sm:items-center">
             <div
-              className="w-32 h-32 border-2 border-white rounded-full bg-center bg-no-repeat bg-cover go-right"
+              className="w-32 h-32 shrink-0 border-2 border-white rounded-full bg-center bg-no-repeat bg-cover go-right"
               style={{
                 backgroundImage: `url(${Image})`,
                 backgroundSize: "90%",
               }}
             />
-            <div className="text-white pl-4">
+            <div className="text-white pt-4 sm:pt-0 sm:pl-4">
               <div
                 className="font-bold text-2xl go-down"
                 style={{ "--animation-delay": "0.15s" }}
@@ -26,7 +26,7 @@ const HomeHero = ({ name, location, countryCode, githubURL, linkedInURL }) => {
                 {name}
               </div>
               <div
-                className="flex go-left"
+                className="flex justify-center sm:justify-start go-left"
                 style={{ "--animation-delay": "0.3s" }}
               >
                 <Flag code={countryCode} width="32" height="28" />
@@ -34,6 +34,7 @@ const HomeHero = ({ name, location, countryCode, githubURL, linkedInURL }) => {
               </div>
             </div>
           </div>
+
           <div className="text-white text-5xl sm:text-7xl md:text-8xl font-bold font-[fira sans]">
             <div className="go-up" style={{ "--animation-delay": "0.45s" }}>
               FULLSTACK
