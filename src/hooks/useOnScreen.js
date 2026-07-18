@@ -14,7 +14,7 @@ export function useOnScreen(threshold = 0.5) {
           observer.disconnect();
         }
       },
-      { threshold }
+      { threshold },
     );
 
     observer.observe(ref.current);

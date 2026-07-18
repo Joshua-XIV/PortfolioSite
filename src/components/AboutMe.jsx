@@ -1,16 +1,18 @@
-import useTypeOnVisible from "../hooks/useTypeOnVisible"
-import aboutMe from "../data/aboutMe"
+import useTypeOnVisible from "../hooks/useTypeOnVisible";
+import aboutMe from "../data/aboutMe";
 
 const Paragraphs = ({ text }) => {
-  const paragraphs = Array.isArray(text) ? text : [text]
+  const paragraphs = Array.isArray(text) ? text : [text];
   return paragraphs.map((p, idx) => (
-    <p key={idx} className={idx < paragraphs.length - 1 ? "pb-4" : ""}>{p}</p>
-  ))
-}
+    <p key={idx} className={idx < paragraphs.length - 1 ? "pb-4" : ""}>
+      {p}
+    </p>
+  ));
+};
 
 const AboutMe = ({ gradient, home = true }) => {
-  const { typedText, ref, isDone } = useTypeOnVisible("About Me", 100)
-  const content = home ? aboutMe.home : aboutMe.about
+  const { typedText, ref, isDone } = useTypeOnVisible("About Me", 100);
+  const content = home ? aboutMe.home : aboutMe.about;
 
   return (
     <div className="px-4">
@@ -26,7 +28,7 @@ const AboutMe = ({ gradient, home = true }) => {
         <Paragraphs text={content.full} />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default AboutMe
+export default AboutMe;

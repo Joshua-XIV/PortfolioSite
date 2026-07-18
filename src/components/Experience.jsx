@@ -1,22 +1,39 @@
-import { abbreviateDate } from "../utils/dates"
+import { abbreviateDate } from "../utils/dates";
 
-const Experience = ({ company, role, startDate, endDate, description, shortDescription, imagePath, scale = 100 }) => {
-  const size = `${scale}%`
+const Experience = ({
+  company,
+  role,
+  startDate,
+  endDate,
+  description,
+  shortDescription,
+  imagePath,
+  scale = 100,
+}) => {
+  const size = `${scale}%`;
 
   return (
     <section className="px-4 py-2">
       <div className="text-white flex space-x-4 items-center">
         <div
           className="w-16 h-16 shrink-0 rounded-full bg-white bg-center bg-no-repeat bg-cover border-green-500 border-2 overflow-hidden"
-          style={{ backgroundImage: `url(${imagePath})`, backgroundSize: size }}>
-        </div>
+          style={{ backgroundImage: `url(${imagePath})`, backgroundSize: size }}
+        ></div>
         <div className="flex flex-col">
           <span className="text-indigo-200 text-xs sm:text-sm md:text-[14px]">
-            <span className="sm:hidden">{abbreviateDate(startDate)} - {abbreviateDate(endDate)}</span>
-            <span className="hidden sm:inline">{startDate} - {endDate}</span>
+            <span className="sm:hidden">
+              {abbreviateDate(startDate)} - {abbreviateDate(endDate)}
+            </span>
+            <span className="hidden sm:inline">
+              {startDate} - {endDate}
+            </span>
           </span>
-          <span className="text-white text-lg sm:text-xl md:text-[20px]">{company}</span>
-          <span className="text-indigo-200 text-xs sm:text-sm md:text-[14px]">{role}</span>
+          <span className="text-white text-lg sm:text-xl md:text-[20px]">
+            {company}
+          </span>
+          <span className="text-indigo-200 text-xs sm:text-sm md:text-[14px]">
+            {role}
+          </span>
         </div>
       </div>
 
@@ -32,7 +49,7 @@ const Experience = ({ company, role, startDate, endDate, description, shortDescr
         ))}
       </ul>
     </section>
-  )
-}
+  );
+};
 
-export default Experience
+export default Experience;

@@ -1,5 +1,5 @@
-import OregonLogo from "../assets/oregonstate.svg"
-import SNHULogo from "../assets/SNHU.png"
+import OregonLogo from "../assets/oregonstate.svg";
+import SNHULogo from "../assets/SNHU.png";
 
 const schools = [
   {
@@ -9,7 +9,7 @@ const schools = [
     startingDate: "January 2026",
     endingDate: "December 2026",
     imagePath: SNHULogo,
-    scale: 120
+    scale: 120,
   },
   {
     name: "Oregon State University",
@@ -18,8 +18,8 @@ const schools = [
     startingDate: "September 2023",
     endingDate: "December 2025",
     imagePath: OregonLogo,
-    scale: 75
+    scale: 75,
   },
-]
+];
 
-export default schools
+export default schools;

@@ -1,4 +1,4 @@
-import LangFrameDisplay from "./LangFrameDisplay"
+import LangFrameDisplay from "./LangFrameDisplay";
 import CPlusPlusLogo from "../assets/cplusplus.svg";
 import CSharpLogo from "../assets/csharp.svg";
 import PythonLogo from "../assets/python.svg";
@@ -10,21 +10,21 @@ import TypeScriptLogo from "../assets/typescript.svg";
 import TailwindCSSLogo from "../assets/tailwindcss.svg";
 import CSSLogo from "../assets/csslogo.svg";
 import HTMLLogo from "../assets/html.svg";
-import MySQLLogo from "../assets/mysql.svg"
-import PostgreSQLLogo from "../assets/postgresql.svg"
-import SwiftLogo from "../assets/swift.svg"
-import FastApiLogo from "../assets/FastAPI.svg"
-import DockerLogo from "../assets/docker.svg"
-import KubernetesLogo from "../assets/kubernetes.svg"
-import AWSLogo from "../assets/aws.svg"
-import GrafanaLogo from "../assets/grafana.svg"
-import RubyLogo from "../assets/ruby.svg"
-import RubyOnRailsLogo from "../assets/rubyrails.svg"
-import GitLogo from "../assets/Git.svg"
-import DotNetLogo from "../assets/dotnet.svg"
-import PowerShellLogo from "../assets/Powershell.svg"
-import BashLogo from "../assets/Bash.svg"
-import useTypeOnVisible from "../hooks/useTypeOnVisible"
+import MySQLLogo from "../assets/mysql.svg";
+import PostgreSQLLogo from "../assets/postgresql.svg";
+import SwiftLogo from "../assets/swift.svg";
+import FastApiLogo from "../assets/FastAPI.svg";
+import DockerLogo from "../assets/docker.svg";
+import KubernetesLogo from "../assets/kubernetes.svg";
+import AWSLogo from "../assets/aws.svg";
+import GrafanaLogo from "../assets/grafana.svg";
+import RubyLogo from "../assets/ruby.svg";
+import RubyOnRailsLogo from "../assets/rubyrails.svg";
+import GitLogo from "../assets/Git.svg";
+import DotNetLogo from "../assets/dotnet.svg";
+import PowerShellLogo from "../assets/Powershell.svg";
+import BashLogo from "../assets/Bash.svg";
+import useTypeOnVisible from "../hooks/useTypeOnVisible";
 import { useOnScreen } from "../hooks/useOnScreen";
 import { useState, useEffect } from "react";
 
@@ -44,7 +44,6 @@ const languages = [
   { image: ReactLogo, name: "React" },
   { image: NodeJSLogo, name: "NodeJS" },
 
-
   { image: MySQLLogo, name: "MySQL" },
   { image: PostgreSQLLogo, name: "PostgreSQL" },
   { image: GrafanaLogo, name: "Grafana" },
@@ -57,19 +56,22 @@ const languages = [
   { image: PowerShellLogo, name: "PowerShell" },
   { image: BashLogo, name: "Bash" },
 
-  // Other 
+  // Other
   { image: TailwindCSSLogo, name: "TailwindCSS" },
   { image: CSSLogo, name: "CSS" },
   { image: HTMLLogo, name: "HTML" },
   { image: LuaLogo, name: "Lua" },
 ];
 
-const TechStack = ({gradient}) => {
-  const {typedText, ref, isDone} =useTypeOnVisible("TechStack", 100);
+const TechStack = ({ gradient }) => {
+  const { typedText, ref, isDone } = useTypeOnVisible("TechStack", 100);
   const [languageRef, isVisible] = useOnScreen(0.2);
   const [visibleCount, setVisibleCount] = useState(6);
-  const isSmallScreen = typeof window !== "undefined" && window.innerWidth < 640;
-  const visibleLanguages = isSmallScreen ? languages.slice(0, visibleCount) : languages;
+  const isSmallScreen =
+    typeof window !== "undefined" && window.innerWidth < 640;
+  const visibleLanguages = isSmallScreen
+    ? languages.slice(0, visibleCount)
+    : languages;
 
   const handleViewMore = () => {
     setVisibleCount((prev) => Math.min(prev + 6, languages.length));
@@ -111,6 +113,6 @@ const TechStack = ({gradient}) => {
       )}
     </>
   );
-}
+};
 
-export default TechStack
+export default TechStack;

@@ -1,8 +1,8 @@
 // hooks/useTypeOnVisible.js
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from "react";
 
 export default function useTypeOnVisible(fullText, delay = 150) {
-  const [typedText, setTypedText] = useState('');
+  const [typedText, setTypedText] = useState("");
   const [index, setIndex] = useState(0);
   const [hasAnimated, setHasAnimated] = useState(false);
   const [isDone, setIsDone] = useState(false);
@@ -16,7 +16,7 @@ export default function useTypeOnVisible(fullText, delay = 150) {
           setHasAnimated(true);
         }
       },
-      { threshold: 0.5 }
+      { threshold: 0.5 },
     );
 
     if (ref.current) observer.observe(ref.current);
@@ -34,8 +34,8 @@ export default function useTypeOnVisible(fullText, delay = 150) {
       setTypedText((prev) => prev + fullText[index]);
       setIndex((i) => i + 1);
 
-      if (index + 1 >= fullText.length){
-        setIsDone(true)
+      if (index + 1 >= fullText.length) {
+        setIsDone(true);
       }
     }, delay);
 

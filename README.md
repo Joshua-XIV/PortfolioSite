@@ -8,9 +8,9 @@
 
 ## **Built With**
 
-- **React**  
-- **JavaScript**  
-- **CSS**  
+- **React**
+- **JavaScript**
+- **CSS**
 - **HTML**
 
 ---

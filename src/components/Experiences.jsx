@@ -1,9 +1,9 @@
-import Experience from "./Experience"
-import jobs from "../data/jobs"
-import useTypeOnVisible from "../hooks/useTypeOnVisible"
+import Experience from "./Experience";
+import jobs from "../data/jobs";
+import useTypeOnVisible from "../hooks/useTypeOnVisible";
 
 const Experiences = ({ gradient }) => {
-  const { typedText, ref, isDone } = useTypeOnVisible("Experience", 100)
+  const { typedText, ref, isDone } = useTypeOnVisible("Experience", 100);
 
   return (
     <section className="px-2">
@@ -15,23 +15,37 @@ const Experiences = ({ gradient }) => {
       <div className="px-2 relative">
         <div className="absolute left-16 top-0 bottom-0 w-0.5 bg-gradient-to-br from-blue-500 to-green-500 -z-1"></div>
         <div className="gradient-border border-2 rounded-xl p-2 space-y-10">
-          {jobs.map(({ company, role, startDate, endDate, description, shortDescription, imagePath, scale }, idx) => (
-            <Experience
-              key={idx}
-              company={company}
-              role={role}
-              startDate={startDate}
-              endDate={endDate}
-              description={description}
-              shortDescription={shortDescription}
-              imagePath={imagePath}
-              scale={scale}
-            />
-          ))}
+          {jobs.map(
+            (
+              {
+                company,
+                role,
+                startDate,
+                endDate,
+                description,
+                shortDescription,
+                imagePath,
+                scale,
+              },
+              idx,
+            ) => (
+              <Experience
+                key={idx}
+                company={company}
+                role={role}
+                startDate={startDate}
+                endDate={endDate}
+                description={description}
+                shortDescription={shortDescription}
+                imagePath={imagePath}
+                scale={scale}
+              />
+            ),
+          )}
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Experiences
+export default Experiences;

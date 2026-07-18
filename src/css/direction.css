@@ -24,7 +24,7 @@
 }
 
 @keyframes slideInFromLeft {
-    0% {
+  0% {
     transform: translateX(-60px);
     opacity: 0;
   }

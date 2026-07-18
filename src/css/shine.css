@@ -1,5 +1,5 @@
-.shine::before{
-  content: '';
+.shine::before {
+  content: "";
   position: absolute;
   left: 0;
   height: 120px;
@@ -13,6 +13,6 @@
   transform: rotate(-10deg) translateX(-60px);
 }
 
-.shine:hover::before{
+.shine:hover::before {
   transform: rotate(-10deg) translate(140px, 70px);
 }
