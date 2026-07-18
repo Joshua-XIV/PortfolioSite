@@ -67,8 +67,23 @@ const TechStack = ({ gradient }) => {
   const { typedText, ref, isDone } = useTypeOnVisible("TechStack", 100);
   const [languageRef, isVisible] = useOnScreen(0.2);
   const [visibleCount, setVisibleCount] = useState(6);
-  const isSmallScreen =
-    typeof window !== "undefined" && window.innerWidth < 640;
+  const [isSmallScreen, setIsSmallScreen] = useState(
+    typeof window !== "undefined" ? window.innerWidth < 640 : false
+  );
+
+  useEffect(() => {
+    const mediaQueryList = window.matchMedia("(max-width: 639px)");
+    const handleChange = () => setIsSmallScreen(mediaQueryList.matches);
+
+    handleChange();
+    mediaQueryList.addEventListener("change", handleChange);
+    return () => mediaQueryList.removeEventListener("change", handleChange);
+  }, []);
+
+  useEffect(() => {
+    if (!isSmallScreen) setVisibleCount(6);
+  }, [isSmallScreen]);
+
   const visibleLanguages = isSmallScreen
     ? languages.slice(0, visibleCount)
     : languages;
