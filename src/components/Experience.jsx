@@ -1,3 +1,5 @@
+import { abbreviateDate } from "../utils/dates"
+
 const Experience = ({ company, role, startDate, endDate, description, shortDescription, imagePath, scale = 100 }) => {
   const size = `${scale}%`
 
@@ -9,7 +11,10 @@ const Experience = ({ company, role, startDate, endDate, description, shortDescr
           style={{ backgroundImage: `url(${imagePath})`, backgroundSize: size }}>
         </div>
         <div className="flex flex-col">
-          <span className="text-indigo-200 text-xs sm:text-sm md:text-[14px]">{startDate} - {endDate}</span>
+          <span className="text-indigo-200 text-xs sm:text-sm md:text-[14px]">
+            <span className="sm:hidden">{abbreviateDate(startDate)} - {abbreviateDate(endDate)}</span>
+            <span className="hidden sm:inline">{startDate} - {endDate}</span>
+          </span>
           <span className="text-white text-lg sm:text-xl md:text-[20px]">{company}</span>
           <span className="text-indigo-200 text-xs sm:text-sm md:text-[14px]">{role}</span>
         </div>
