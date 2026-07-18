@@ -22,9 +22,11 @@ const jobs = [
     startDate: "May 2026",
     endDate: "August 2026 (Present)",
     description: [
-      "Incoming Software Engineering Intern on the WebKit Media team for Summer 2026",
-      "Selected for a competitive internship focused on building and improving web media playback systems in WebKit",
-      "Will contribute to production-level code supporting audio and video playback, streaming, and performance across Apple platforms"
+      "Developing Safari’s cmd+F find functionality to search video captions, subtitles, and descriptions across macOS and iOS devices using C++, targeting a new cross-browser accessibility standard to expose caption tracks on 1B+ Apple devices",
+      "Achieved 100% WPT compliance for MediaSession setActionHandler by implementing 4 missing actions in WebCore’s IDL layer and mapped MediaSession actions to OS-level platform commands across 5 Apple platforms",
+      "Authored JavaScript layout tests validating cue matching, timestamp accuracy, edge case handling, action handler behavior, and platform command mappings through IDL bindings bridging JavaScript and C++",
+      "Created Objective-C API tests validating proper behavior of Safari's find-in-page feature regarding text and cue matching",
+      "Collaborated with multiple teams and organizations regarding the finalization of the new find functionality, presenting to Senior VPs of SWE"
     ],
     imagePath: AppleLogo,
     scale: 70
