@@ -1,6 +1,5 @@
 import { Outlet } from "react-router-dom";
 import NavBar from "../components/NavBar";
-import BackGround from "../components/BackGround";
 import Footer from "../components/Footer";
 import ScrollToTop from "../components/ScrollTop";
 
@@ -9,7 +8,6 @@ const gradient =
 const MainLayout = () => {
   return (
     <>
-      <BackGround />
       <ScrollToTop />
       <NavBar />
       <Outlet />
